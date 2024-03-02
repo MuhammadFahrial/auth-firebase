@@ -13,12 +13,12 @@ GreetHead.innerHTML = `welcome ${
 let Signout = () => {
   sessionStorage.removeItem("user-creds");
   sessionStorage.removeItem("user-info");
-  window.location.href = "/src/Login/login.html";
+  window.location.href = "../../index.html";
 };
 
 let CheckCred = () => {
   if (!sessionStorage.getItem("user-creds")) {
-    window.location.href = "/src/Login/login.html";
+    window.location.href = "../../index.html";
   } else {
     MsgHead.innerHTML = `user with email "${UserCreads.email}" logged in`;
     GreetHead.innerHTML = `welcome ${
